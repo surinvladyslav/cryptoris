@@ -1,0 +1,487 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Oxygen', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: #FFFFFF;
+}
+
+a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.container {
+    max-width: 1110px;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.header {
+    background: #16163F;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.logo {
+    font-family: 'Cinzel', serif;
+    font-size: 38px;
+    line-height: 51px;
+    letter-spacing: 0.02em;
+    color: #FFFFFF;
+}
+
+.header__menu {
+    display: flex;
+}
+
+.menu__list {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+}
+
+.menu__list-item {
+    /*margin: 0 15px;*/
+}
+
+.menu__list-link {
+    line-height: 23px;
+    color: #FFFFFF;
+}
+
+.main {
+    flex: 1 1 auto;
+}
+
+.goal {
+    background-color: #dce6ef;
+    background-image: url("../images/mountains-1.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    position: relative;
+    background-size: cover;
+    min-height: 735px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.goal__inner {
+    width: 100%;
+    min-height: 735px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.goal__title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-shadow: -2px 1px 2px rgba(6, 16, 55, 0.7);
+}
+
+.goal__button_contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 55px;
+    cursor: pointer;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    text-transform: uppercase;
+    background: #16163F;
+    box-shadow: 11px -17px 28px rgba(219, 229, 238, 0.33);
+    border-radius: 30px 30px 0px 0px;
+}
+
+.goal__button_contact img {
+    margin-right: 10px;
+}
+
+.top__button_contact img {
+    margin-right: 10px;
+}
+
+.deal {
+    background: #16163F;
+}
+
+.deal__inner {
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.deal__title {
+    font-family: 'Rufina', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-right: 50px;
+}
+
+.deal__items {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    gap: 20px;
+}
+
+.deal__item img {
+    filter: drop-shadow(-6px -1px 28px rgba(42, 64, 146, 0.62));
+}
+
+.about {
+    background: #FFFFFF;
+}
+
+.about__inner {
+    padding: 110px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.about__text {
+    font-family: 'Rufina', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    max-width: 730px;
+    color: #16163F;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.benefits {
+    display: flex;
+    background: #16163F;
+    position: relative;
+    overflow: hidden;
+}
+
+.benefits.reverse .benefits__inner {
+    display: flex;
+    flex-direction: row-reverse;
+    margin-left: 40px;
+}
+
+.benefits.reverse .benefits__image {
+    left: 0;
+    width: 55%;
+}
+
+.benefits.reverse .benefits__content {
+    flex: 0 1 40%;
+    text-align: right;
+}
+
+.benefits__inner {
+    width: 100%;
+    padding: 150px 0;
+    display: flex;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.benefits__content {
+    flex: 0 1 50%;
+}
+
+.benefits__title {
+    font-family: 'Rufina', serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.benefits__list {
+    list-style-type: none;
+}
+
+.benefits__list-item {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.benefits__list-img {
+    margin-right: 15px;
+}
+
+.benefits__text {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.benefits__list-text {
+    font-family: 'Oxygen', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.benefits__image {
+    background-attachment: fixed;
+    background-color: #dce6ef;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: absolute;
+    right: 0;
+    width: 50%;
+    height: 100%;
+}
+
+.image-1 {
+    background-image: url("../images/mountains-2.png");
+    background-position: right center;
+}
+
+.image-2 {
+    background-image: url("../images/mountains-3.png");
+    background-position: left center;
+}
+
+.contact {
+    background: #FFFFFF;
+}
+
+.contact__inner {
+    padding: 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact__title {
+    font-family: 'Rufina', serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 140%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #16163F;
+}
+
+.contact__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    max-width: 545px;
+    width: 100%;
+}
+
+.contact__input {
+    padding: 12px 20px;
+    width: 100%;
+    max-width: 545px;
+    height: 50px;
+    background: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    box-shadow: -6px -1px 28px rgba(219, 229, 238, 0.6);
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    color: #828282;
+    margin: 10px 0;
+}
+
+.contact__input::placeholder {
+    color: #828282;
+}
+
+.contact__input.textarea {
+    height: 90px;
+}
+
+.contact__input.textarea::placeholder {
+    color: #16163F;
+}
+
+.contact__button-submit {
+    margin-top: 10px;
+    padding: 12px 20px;
+    width: 100%;
+    height: 50px;
+    border: none;
+    color: #FFFFFF;
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 140%;
+    cursor: pointer ;
+    text-transform: uppercase;
+    background: #16163F;
+}
+
+.contact__socials {
+    width: 100%;
+    max-width: 600px;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+    gap: 20px;
+}
+
+.contact__socials-item {
+    display: flex;
+    /*width: 100%;*/
+}
+
+.contact__socials-img {
+    max-height: 41px;
+    margin-right: 15px;
+}
+
+.contact__socials-info {
+    display: flex;
+    flex-direction: column;
+    color: #16163F;
+}
+
+.contact__socials-info p {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #16163F;
+}
+
+.contact__socials-info span {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    width: max-content;
+    color: #6C6B6C;
+}
+
+.footer {
+    flex: 0 0 auto;
+    background: #16163F;
+}
+
+.footer__inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 45px 0;
+}
+
+.footer__text {
+    font-weight: 700;
+}
+
+.footer__menu {
+    display: flex;
+}
+
+@media (max-width: 768px) {
+    .header__inner {
+        flex-direction: column;
+    }
+
+    .logo,
+    .header__menu,
+    .footer__menu{
+        margin: 5px 0;
+    }
+
+    .footer__inner {
+        flex-direction: column-reverse;
+        padding: 20px 0;
+        gap: 10px;
+    }
+
+    .deal__inner {
+        flex-direction: column;
+    }
+
+    .deal__items {
+        margin-top: 20px;
+        justify-content: center !important;
+        flex-wrap: wrap;
+    }
+
+    .deal__title.uppercase {
+        margin-right: 0px;
+    }
+
+    .benefits__content {
+        flex: 1 1 auto !important;
+    }
+
+    .benefits.reverse .benefits__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+    .benefits__title {
+        max-width: 400px;
+    }
+
+    .benefits__image {
+        display: none;
+    }
+}
+
+@media (max-width: 580px) {
+    .contact__socials {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
